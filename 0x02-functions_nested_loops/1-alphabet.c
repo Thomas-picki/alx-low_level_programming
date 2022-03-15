@@ -1,13 +1,12 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
-* main - check the code
+* main -check the code
 *
-* Return: Always 0.
+* Return: Always 0:
 */
-int main()
+int main(void)
 {
-int ch;
-for(ch = 'a'; ch <= 'z'; ch++)
-putchar(ch);
-return 0;
+print_alphabet();
+return (0);
 }
