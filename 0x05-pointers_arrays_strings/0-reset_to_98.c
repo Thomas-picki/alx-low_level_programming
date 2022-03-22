@@ -1,19 +1,14 @@
-
 #include "main.h"
-#include <stdio.h>
-
+/
+[A[3~[
 /**
- * main - check the code 
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int n;
+* rese to 98- update a integer value to 98
+* @n: a pointer to an int that will update
+*
+* Return: void that means correct
+*/
 
-    n = 402;
-    printf("n=%d\n", n);
-    reset_to_98(&n);
-    printf("n=%d\n", n);
-    return (0);
-}[A[A[A[A[A[C[C[C[C[C[C[C[C[C98[3~[3~[C;[B[B[B[B[B[B[B[B[B
+void reset_to_98(int *n)
+{
+*n = 98;
+}
