@@ -1,7 +1,10 @@
 #include "main.h"
-/
-[A[3~[
-/**
+#include <stdio.h>
+
+/*/*
+/*/*
+
+[A[A[C[[A[B[A[C[C/**
 * rese to 98- update a integer value to 98
 * @n: a pointer to an int that will update
 *
