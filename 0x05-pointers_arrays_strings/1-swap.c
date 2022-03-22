@@ -1,5 +1,4 @@
-#include "main.c"
-
+#include "main.h"
 /**
 * main - swap
 *
@@ -14,5 +13,3 @@ f = *a;
 *a = *b;
 *b = f;
 }
-git add .
-[A[C[C[C[C[C[C
