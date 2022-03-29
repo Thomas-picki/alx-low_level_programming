@@ -2,21 +2,24 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strchr - function that locates a character in a string.
  *
- * Return: Always 0.
+ * @s: string to receive and return
+ * @c: character to receive
+ * Return: char
  */
-int main(void)
+
+char *_strchr(char *s, char c)
 {
-    char *s = "hello";
-    char *f;
-
-    f = strchr(s, 'l');
-
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
-    return (0);
+	while (*s != '\0')
+	{
+		if (*s == c)
+			return (s);
+		s++;
+	}
+	if (*s == c)
+		return (s);
+	else
+		return (NULL);
 }
 
