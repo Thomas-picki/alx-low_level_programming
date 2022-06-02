@@ -1,5 +1,5 @@
 #include <stdio.h>
-/**
+/*
  * main - Printsstring outputs 
  * Return: Always 0 (Success)
  */
