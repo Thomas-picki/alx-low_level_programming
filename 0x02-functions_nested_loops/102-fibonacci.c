@@ -17,7 +17,7 @@ int main(void)
 	{
 		if (x == 49)
 		{
-			printf("%ld"; n1);
+			printf(("%ld"); n1));
 		}
 		else
 		{
