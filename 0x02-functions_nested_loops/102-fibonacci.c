@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main -m print first 50 fibonacci numbers
- * return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
