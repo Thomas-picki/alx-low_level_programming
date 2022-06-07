@@ -13,7 +13,7 @@ int main(void)
 	n2 = 2;
 	y = 50;
 
-	for (x = 0; x < 1; x++)
+	for (x = 0; x < y; x++)
 	{
 		if (x == 49)
 		{
