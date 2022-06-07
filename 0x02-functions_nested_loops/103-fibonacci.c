@@ -2,7 +2,7 @@
 /**
  * main - printd sum of fibonacci numbers under 40000000
  *
- * return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
