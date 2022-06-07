@@ -17,11 +17,11 @@ int main(void)
 	{
 		if (x == 49)
 		{
-			printf("%ld, ", n1);
+			printf("%ld ", n1);
 		}
 		else
 		{
-			printf("%ld\n", n1);
+			printf("%ld, ", n1);
 			nx = n1 + n2;
 			n1 = n2;
 			n2 = nx;
