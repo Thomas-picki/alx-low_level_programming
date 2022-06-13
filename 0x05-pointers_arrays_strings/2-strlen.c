@@ -9,12 +9,13 @@
 
 int _strlen(char *s)
 {
-int x;
-x = 0;
-while(s(x) != '\0')
-{
-x++
+	int x;
+	
+	x = 0;
+	while(s(x) != '\0')
+	{
+		x++;
+	}
+	return (x);
 }
-return (x);
-}
-[A[A[A[A[C[C[C;[A[A[C[C[C[[[C[][B[B[B[B[B[B[B[B[B[B[D[D[D[D[D[D[D[D[D[D[D
+
