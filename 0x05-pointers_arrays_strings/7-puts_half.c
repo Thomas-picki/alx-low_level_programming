@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts_half - print half a strog
  * @str: input string
@@ -16,7 +17,7 @@ void puts_half(char *str)
 	else
 		n = i / 2;
 	for (; str[n] != '\0'; n++)
-		putchar(str[n]);
+		_putchar(str[n]);
 	_putchar('\n');
 }
 
