@@ -25,7 +25,7 @@ int main(void)
 		}
 	}
 	*key = (2772 - x);
-	*(key + 1) = '\n');
+	*(key + 1) = '\n';
 	printf("%s", k);
 	return (0);
 }
