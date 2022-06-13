@@ -17,8 +17,10 @@ void rev_string(char *s)
 	{
 		char temp = s[stri];
 		int left = i - stri - 1;
+
 		s[stri] = s[left];
 		s[left] = temp;
+
 		stri++;
 	}
 }
