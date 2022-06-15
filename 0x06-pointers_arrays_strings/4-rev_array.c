@@ -11,24 +11,12 @@
 
 void reverse_array(int *a, int n)
 {
-	int i = 0;
-	int j = 0;
-	int *init, *final;
-	int aux = 0;
+	int i, j, t;
 
-	init = a;
-	final = a;
-	n -= 1;
-	while (i < n)
-		i += 1;
-	while (j <= i)
+	for (i = 0, j = (n - 1); i < j; i++, j--)
 	{
-		aux = *(init + j);
-		*(init + j) = *(final + i);
-		*(final + i) = aux;
-		j++;
-		i--;
+		t = a[i];
+		a[i] = a[j];
+		a[j] = t;
 	}
 }
-© 2022 GitHub, Inc.
-Terms
