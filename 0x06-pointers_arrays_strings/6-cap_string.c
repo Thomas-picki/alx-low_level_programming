@@ -5,28 +5,28 @@
  * Return: String that is encoded
  */
 
-char *leet(char *c)
+char *cap_string(char *s)
 {
-	char *cp = c;
-	char key[] = {'A', 'E', 'O', 'T', 'L'};
-	int value[] = {4, 3, 0, 7, 1};
-	unsigned int i;
+	int i = 0;
 
-	while (*c)
+	while (*(s + i) != '\0')
 	{
-		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
 		{
-			/*32 is the difference between lower case letters and apper case letters*/
-			if (*c == key[i] || *c == key[i] + 32)
-			{
-				*c = 48 + value[i];
-			}
+			*(s + i) = *(s + i) - ' ';
+			i++;
 		}
-		c++;
+		if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t' || *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'|| *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '(' || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}' || *(s + i) == '.')
+		{
+			i++;
+			if (*(s + i) >= 97 && *(s + i) <= 122)
+			{
+				*(s + i) = *(s + i) - ' ';
+			}
+
+		}
+		else 
+			i++;
 	}
-
-	return (cp);
-
+	return (s);
 }
-
-
