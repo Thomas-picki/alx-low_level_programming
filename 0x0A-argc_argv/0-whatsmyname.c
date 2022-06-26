@@ -11,7 +11,7 @@ void print_string(char *str);
 int main(int argc __attribute__((unused)), char *argv[])
 {
 	print_string(argv[0]);
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
@@ -26,7 +26,7 @@ void print_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
 }
