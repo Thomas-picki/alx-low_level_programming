@@ -2,7 +2,7 @@
 /**
  * free_grid - free a 2d grid
  * alloc_grid function
- * @grid: the grid 
+ * @grid: the grid
  * @height: the no of rows
  * return: nothing
  */
