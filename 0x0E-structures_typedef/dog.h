@@ -1,5 +1,5 @@
-#ifndef _DOG_
-#define _DOG_
+#ifndef _HEADER_
+#define _HEADER_
 /**
  * structure dog - dog 
  * @name: name of the dog
