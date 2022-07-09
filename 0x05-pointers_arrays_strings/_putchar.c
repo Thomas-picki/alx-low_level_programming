@@ -4,8 +4,8 @@
 * @c: the character to print
 *
 * Retrun: on success q
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[
 * on error -1 is reurned
+*/
 
 int _putchar(char c)
 {
