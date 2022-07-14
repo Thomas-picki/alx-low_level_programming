@@ -1,8 +1,11 @@
 #include <stdio.h>
+void first(void) __atrribute__ ((constructor));
 /**
- * beforemain - runs before the main
+ * first - ...
+ * return: nothing
  */
-void __attribute__((constructor)) beforeMain()
+void first(void)
 {
-	printf("You're beat! and yet, you must allow, \n%s", "I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
