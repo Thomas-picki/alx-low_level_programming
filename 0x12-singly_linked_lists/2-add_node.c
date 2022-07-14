@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <string.h>
-#include "strlen.c"
 #include "lists.h"
 /**
  * add_node - add a new node
@@ -10,21 +9,36 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node_ptr = malloc(sizeof(list_t));
-
-	new_head = malloc(sizeof(list_t));
-
-	if (new_head == NULL)
+	list_t *temp;
+	
+	if (head != NULL && str != NULL)
 	{
-		return (NULL);
+		temp = malloc(sizeof(list_t));
+		if (temp == NULL)
+			return (NULL);
+		
+		head->str = strdup(str);
+		head->len = _strlen(str);
+		head->next = *head;
+		*head = temp;
+		return (temp);
 	}
-	else
+	return (0);
+}
+/**
+ * _strlen - return the length
+ * @s: string to count
+ * return: string length
+ */
+int _strlen(const char *s)
+{
+	int x = 0;
+
+	while (*s)
 	{
-		new_head->str = strdup(str);
-		new_head->len = length;
-		new_head->next = *head;
-		*head = new;
-		return (new_head);
+		s++;
+		x++;
 	}
+	return (x);
 }
 
