@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * first - ...
- * return: nothing
+ * beformain: runs before the main function
  */
 void __attribute__((constructor)) beforeMain()
 {
