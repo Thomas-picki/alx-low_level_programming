@@ -9,7 +9,6 @@
 
 int _strlen(char *s)
 {
-<<<<<<< Updated upstream
 	int x;
 	
 	x = 0;
@@ -20,7 +19,6 @@ int _strlen(char *s)
 	return (x);
 }
 
-=======
 int x;
 x = 0;
 while(s(x) != '\0')
@@ -29,4 +27,3 @@ x++;
 }
 return (x);
 }
->>>>>>> Stashed changes
