@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * main - copy info from file_from to file_to.
  * @ac: number of arguments
